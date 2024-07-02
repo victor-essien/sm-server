@@ -7,7 +7,7 @@ import Message from "../models/messageModel.js";
 export const initializeSocket = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: "https://social-scape.netlify.app/", // Replace with your frontend URL
+      origin: "https://social-scape.netlify.app", // Replace with your frontend URL
       methods: ["GET", "POST"],
       allowedHeaders: ["Content-Type", "Authorization"],
     },

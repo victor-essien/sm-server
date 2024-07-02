@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, "view/build")))
 
 const PORT = process.env.PORT || 8800; 
 const corsOptions = {
-    origin: 'https://social-scape.netlify.app/', // Allow this origin
+    origin: 'https://social-scape.netlify.app', // Allow this origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allow these methods
     allowedHeaders: ['Content-Type', 'Authorization']
   };
